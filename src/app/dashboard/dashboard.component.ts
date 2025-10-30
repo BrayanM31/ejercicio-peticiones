@@ -17,6 +17,11 @@ export class DashboardComponent {
     this.router.navigate(['/clientes']);
   }
 
+  // 👇 AGREGA ESTE MÉTODO
+  irProductos() {
+    this.router.navigate(['/productos']);
+  }
+
   logout() {
     this.auth.logout();
     this.router.navigate(['/login']);
